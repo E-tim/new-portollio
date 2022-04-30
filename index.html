@@ -6,7 +6,7 @@
         <script src="https://kit.fontawesome.com/a17111d927.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css"/>
 		<title>portfollio</title>
-        <link rel="shortcut icon" type="image/png" href="img/default.png">
+        <link rel="shortcut icon" type="image/png" href="img/default.ico">
 	</head>
 	<body>
         <nav >
@@ -20,11 +20,13 @@
                 </ul>
 
             </div>
-            <div><i id="farBar" class="fas fa-bars"></i></div>
-        </nav>
+            <div><i class="fas fa-bars farBar"></i></div>
+            <div><i class="fas fa-times faTimes"></i></div>
+
+        </nav><br><br>
 
         <!-- about section -->
-        <div id="about">
+        <div id="about" class="aboutMe">
             <div class="wordsAboutme">
                 <h1>EESUOLA TIMOTHY</h1>
                 <P>
@@ -35,12 +37,20 @@
                     app for bussiness , individual , and the world to enjoy the latest technology . 
                 </P>
             </div>
-            <img src="img/imgg.jpg">
+            <!-- <img src="img/abouts.png"> -->
         </div>
 
         <!-- project -->
-        <div id="project">
+        <div id="project" class="fadeIn">
             <h4>Projects</h4>
+            <div class="projectList">
+                <h2><a href="https://stupefied-joliot-c440f3.netlify.app/">ChatApp</a></h2>
+                <a href="https://stupefied-joliot-c440f3.netlify.app/">A chat-App made using react and firebase for backend</a>
+            </div>
+            <div class="projectList">
+                <h2><a href="https://flamboyant-meitner-210764.netlify.app/">E-Commerce</a></h2>
+                <a href="https://flamboyant-meitner-210764.netlify.app/">An E-commerce , Where you can order for your groceries.</a>
+            </div>
             <div class="projectList">
                 <h2><a href="https://hardcore-bartik-ff226a.netlify.app/">Task-Manager</a></h2>
                 <a href="https://hardcore-bartik-ff226a.netlify.app/">I made this task manager ta perfrom CRUD operation, CREATE, READ, UPDATE, DELETE .</a>
@@ -63,7 +73,7 @@
 
 
         <!-- client -->
-        <div id="client" class="client">
+        <div id="client" class="client fadeIn">
             <div class="clientWords">
                 <h2>QR Menu</h2>
                 <p>
@@ -88,19 +98,19 @@
                 
             </div>
             <span id="mySpan">read more</span>
-            <div class="qrImage">
+            <!-- <div class="qrImage">
                 <img src="img/qr.png"/>
                 <img src="img/qr2.jpg"/>
-            </div>
+            </div> -->
         </div>
 
         <!-- halet tips -->
 
         <div class="healtthTips">
             <h2>HEALTH TIPS</h2>
-            <P>I used to eat whatever i want to eat and drink alcohol , I don't care if they are good for my
+            <P>I used to eat whatever I want to eat and drink alcohol , I don't care if they are good for my
                health or not. I wouldn't go to gym , I ate late at night , sometimes wokeup in the middle of night
-               just to have some bread or chocolate . One thing i noticed , I was always sick . I would go
+               just to have some bread or chocolate . One thing I noticed , I was always sick . I would go
                to hospital complaining . Dr , in the hospital never asked me about what I eat or if I am 
                living a healthy life style . It was always about writing script to get expensive pain-killer
                and some anti-inflammatory medications at their
@@ -108,7 +118,7 @@
             </P>
             <p>
                 My life changed when I came accros AMERIX on twitter , He changed my life and I am sure alot of men 
-                out there too . I learnt from him you can't just eat anything because they are sweet , you aske yourself
+                out there too . I learnt from him you can't just eat anything because they are sweet , you ask yourself
                 is this good for me , what are the side effect of eating this or drinking alcohol. I think first thing to
                 healthy life is to know what you are putting in your mouth if it is good for you or not .
             </p><br>
@@ -123,7 +133,7 @@
 
             <p>1. Food : Before you eat anything , ask yourself is this good for me . The sugar , sodas, juice,
                 energy drinks, alcohol and all different types of junk foods. If I take this , won't this lead to obesity, chronic inflamation & metabolic
-                syndrome (hypertension, & diabete) . You will pick the best engine oil for your car , why can't you select
+                syndrome (hypertension, & diabetes) . You will pick the best engine oil for your car , why can't you select
                 a healthy food and drink.
             </p><br>
             <p>
@@ -143,7 +153,7 @@
                 3. Gym : The benefits of lifting weights include building muscle, burning body fat, strengthening your
                 bones and joints, reducing injury risk, and improving heart health -source(google). Lifting heavy weight and and do some
                 exercise is the best way to start my day . I used to carry 20kg and do 15 decline and incline push-up .
-                That's too low , right ? yes I know that . right now, I lift 30kg and more and i do 40 push in 10 set.
+                That's too low , right ? yes I know that . right now, I lift 55kg and more and i do 40 push in 10 set.
                 I see how that have made my bone strong and I like the shape of my body . Starting my day this way gives me confidence ,
                  and now, it's part of me and i can't do without it.
             </p><br>
@@ -163,32 +173,41 @@
             <span id="mySpa">read more</span>
 
         </div>
-        <!-- health tips -->
+        <!-- contact -->
         <div id="contact">
             <div class="name">
                 <!-- <h3>EESUOLA TIMOTHY</h3>
                 <p>Front-End Developer</p> -->
                 <div>
                     <a href="https://twitter.com/eesuolaT">Twitter</a><br>
-                    <a href="https://www.instagram.com/eesuolaayotunde/">Instagram</a><br>
+                    <a href="https://github.com/E-tim">GitHub</a><br>
                     <a href="https://www.linkedin.com/in/eesuola-ayotunde-timothy-1182291b1/">linkedin</a>
                 </div>
             </div>
             <form action="https://formsubmit.co/eesuolaayot@gmail.com" method="POST">
                 <input type="hidden" name="_subject" value="New web!">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://competent-aryabhata-4c8abe.netlify.app/thanks.html">
-                Name:<br>
+                <input type="hidden" name="_next" value="https://eesuola.com/portfollio/thanks.html">
+                <span>Name:</span> <br>
                 <input type="text" name="name" required><br>
-                E-mail:<br>
+                <span>E-mail:</span> <br>
                 <input type="email" name="email" required><br>
-                Message:<br>
+                <span>Message:</span> <br>
                 <textarea name="message" class="message" required></textarea><br>
                 <button type="submit">SEND</button>
             </form>
         </div>
         <!-- <div class="backup" >go up</div> -->
-        <div class="footer">&copytim 2021</div>
+        <div class="footer">
+            <div class="foot">
+                <div class="font">
+                    <a href="https://github.com/E-tim"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/eesuola-ayotunde-timothy-1182291b1/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/eesuolaT"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <p>&copyeesuola 2022</p>
+        </div>
         
 
 
